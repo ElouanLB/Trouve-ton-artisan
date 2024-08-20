@@ -1,0 +1,330 @@
+$color-template1: #f1f8fc;
+$color-template2: #0074c7;
+$color-template3: #00497c;
+$color-template4: #384050;
+$color-template5: #cd2c2e;
+$color-template6: #82b864;
+$color-template7: #fff;
+
+@font-face {
+  font-family: "Graphik";
+  src: url("../fonts/Graphik-Bold.woff") format("woff"),
+    url("../fonts/Graphik-BoldItalic.woff") format("woff"),
+    url("../fonts/Graphik-Regular.woff") format("woff"),
+    url("../fonts/Graphik-RegularItalic.woff") format("woff"),
+    url("../fonts/Graphik-Thin.woff") format("woff"),
+    url("../fonts/Graphik-ThinItalic.woff") format("woff");
+}
+
+body {
+  font-family: "Graphik" !important;
+  background-color: #f1f8fc;
+  font-size: 1.2rem;
+  line-height: 1.625;
+}
+p {
+  margin: 0;
+}
+a {
+  text-decoration: none !important;
+  margin-top: 10px;
+  padding: 10px;
+}
+li {
+  list-style: none;
+  margin-top: 10px;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 0 !important;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Graphik";
+  color: $color-template4 !important;
+}
+.bold {
+  font-weight: 600;
+}
+.semi-bold {
+  font-weight: 400;
+}
+.font {
+  font-family: "Nunito Sans", sans-serif;
+}
+.border-text {
+  border-bottom: 5px solid $color-template3;
+  margin-top: 20px;
+  margin-block-end: 6%;
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.star-icon {
+  color: $color-template5;
+}
+.navbar {
+  box-shadow: 0 0.2rem 0.6rem rgba(0, 0, 0, 0.0793474);
+}
+.container {
+  margin: 0 auto;
+  max-width: 1320px;
+}
+
+.container-color {
+  background-color: $color-template2;
+}
+.container-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 1320px;
+}
+aside {
+  width: 25%;
+  background-color: $color-template1;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.logo-img {
+  height: 141px;
+  width: 250px;
+  display: inline-block;
+}
+.c-title-line {
+  position: relative;
+  z-index: 2;
+  display: inline-block;
+  max-width: 80%;
+  margin: 0;
+  margin-left: 0px;
+  padding: 6rem 3rem 6rem 0;
+  line-height: 1.4;
+}
+.find-artisan-section {
+  margin-top: 10px;
+  padding: 0;
+  border-radius: 8px;
+}
+.section-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: $color-template3;
+}
+.steps {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.step {
+  flex: 1;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: $color-template7;
+  margin-right: 20px;
+}
+
+.step:last-child {
+  margin-right: 0;
+}
+.step-icon {
+  width: 40px;
+  height: 40px;
+  margin-block-end: 10px;
+  border-radius: 50%;
+  background-color: $color-template2;
+  color: $color-template1;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.step-icon-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.step_text_color {
+  color: $color-template3;
+}
+.card {
+  margin-block-end: 10px;
+}
+.card-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.card-title {
+  color: $color-template2 !important;
+}
+.form-group {
+  margin-block-end: 10px;
+}
+.col_white_amrc {
+  color: $color-template1;
+}
+footer {
+  background-color: $color-template2;
+  padding: 0;
+  width: 100%;
+}
+.footer_color_link {
+  color: $color-template1 !important;
+}
+.logo_footer {
+  position: relative;
+  z-index: 1;
+}
+.margin_footer {
+  margin-top: 3rem !important;
+}
+
+.center-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.container_link_footer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.social-footer_container {
+  margin-right: auto !important;
+  margin-left: auto !important;
+  background-color: $color-template7;
+}
+.social_footer_ul {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+.social_footer_ul li {
+  padding-left: 20px;
+  padding-top: 10px;
+  float: left;
+}
+.social_footer_ul li a {
+  color: $color-template4;
+  padding: 8px;
+  border-radius: 50%;
+}
+.social_footer_ul li i {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+}
+.social_footer_ul li a:hover {
+  color: $color-template6;
+}
+.link_footer {
+  display: flex;
+  justify-content: center;
+}
+.pt2 {
+  padding-top: 40px;
+  margin-bottom: 20px;
+}
+.btn-primary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+.page404 {
+  text-align: center;
+}
+.not-found-image {
+  width: 700px;
+  height: 600px;
+}
+.autocomplete {
+  position: static;
+}
+.autocomplete ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: calc(100% + 5px);
+  left: 0;
+  width: 100%;
+  max-height: 200px;
+  overflow-y: auto;
+  background-color: $color-template1;
+  border: 1px solid #ccc;
+  border-top: none;
+  z-index: 999;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.autocomplete li {
+  padding: 10px;
+  border-bottom: 1px solid $color-template2;
+}
+.autocomplete li:last-child {
+  border-bottom: none;
+}
+.form-control {
+  border-radius: 0 !important;
+  border-right: 1px solid $color-template2 !important;
+  border-bottom: 1px solid $color-template2 !important;
+  border-left: transparent !important;
+  border-top: transparent !important;
+  margin-left: 10px;
+}
+.active {
+  border-bottom: 2px solid $color-template2;
+}
+.bs-stepper .step {
+  display: inline-block;
+  border: 2px solid $color-template2;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  line-height: 36px;
+  text-align: center;
+  margin-right: 20px;
+  background-color: $color-template1;
+  color: #333;
+}
+.linear-stepper {
+  display: flex;
+}
+
+.linear-stepper-item {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.step-number {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 50%;
+  background-color: $color-template1;
+  color: #fff;
+  margin: 0 auto 10px;
+}
+
+.step-label {
+  font-size: 14px;
+}
+
+.linear-stepper-item.active .step-number {
+  background-color: $color-template2;
+}

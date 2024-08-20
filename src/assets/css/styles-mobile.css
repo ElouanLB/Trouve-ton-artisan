@@ -1,0 +1,23 @@
+@media (max-width: 576px) {
+  .form-control {
+    display: none !important;
+  }
+  .steps {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .step {
+    margin-bottom: 20px;
+  }
+  .container_link_footer {
+    display: flex;
+    justify-content: flex-start !important;
+    flex-wrap: wrap;
+  }
+  .link_footer {
+    display: block !important;
+    margin: 0;
+    padding: 0;
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "short_name": "Trouve ton artisan",
+  "name": "Votre plateforme pour trouver des artisans qualifiés près de chez vous",
+  "description": "Trouvez rapidement des artisans qualifiés près de chez vous pour vos projets de construction, de rénovation ou de décoration.",
+  "icons": [
+    {
+      "src": "favicon-32.png",
+      "sizes": "32x32",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "lang": "fr",
+  "dir": "ltr",
+  "scope": "/",
+  "prefer_related_applications": false,
+  "related_applications": []
+}

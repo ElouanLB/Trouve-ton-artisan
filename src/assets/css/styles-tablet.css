@@ -1,0 +1,13 @@
+@media (min-width: 577px) and (max-width: 991px) {
+  .container_link_footer {
+    display: flex;
+    justify-content: flex-start !important;
+    flex-wrap: wrap;
+  }
+  .logo_footer {
+    padding: 0 !important;
+  }
+  ul {
+    padding-left: 0 !important;
+  }
+}
