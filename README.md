@@ -28,13 +28,13 @@ npm install
 
 npm run build
 
-### Utilisation
+## Utilisation
 
 npm start
 
 Ensuite, ouvrez votre navigateur à l'adresse http://localhost:3000 pour voir l'application en action.
 
-### Liste des dépendances
+## Liste des dépendances
 
         "@fortawesome/fontawesome-free": "^6.5.1",
         "@fortawesome/free-brands-svg-icons": "^6.5.1",
