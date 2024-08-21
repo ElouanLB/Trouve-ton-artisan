@@ -22,6 +22,22 @@ function Card_crafts_man() {
   const [error, setError] = useState("");
   const [successMessage, setSuccessMessage] = useState("");
 
+  const escapeHtml = (text) => {
+    const map = {
+      '&': '&amp;',
+      '<': '&lt;',
+      '>': '&gt;',
+      '"': '&quot;',
+      "'": '&#039;'
+    };
+    return text.replace(/[&<>"']/g, (m) => map[m]);
+  };
+
+  const containsMaliciousContent = (text) => {
+    const maliciousPatterns = /<script|javascript:|data:|<\/script>/i;
+    return maliciousPatterns.test(text);
+  };
+
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setFormData((prevState) => ({
@@ -43,12 +59,22 @@ function Card_crafts_man() {
       return;
     }
 
+    // Vérification XSS
+    if (
+      containsMaliciousContent(formData.name) ||
+      containsMaliciousContent(formData.subject) ||
+      containsMaliciousContent(formData.message)
+    ) {
+      setError("Contenu malveillant détecté. Veuillez vérifier vos entrées.");
+      return;
+    }
+
     const templateId = "template_m811jk9";
     const emailData = {
       to_email: artisan ? artisan.email : "",
-      name: formData.name,
-      subject: formData.subject,
-      message: formData.message,
+      name: escapeHtml(formData.name),
+      subject: escapeHtml(formData.subject),
+      message: escapeHtml(formData.message),
     };
 
     sendEmail(templateId, emailData)
